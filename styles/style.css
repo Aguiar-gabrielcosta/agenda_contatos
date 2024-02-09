@@ -33,6 +33,8 @@ body {
     background-color: white;
     max-width: 800px;
     width: 100%;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.262);
 }
 
 header {
@@ -68,6 +70,23 @@ main > #novo-contato h2 {
     margin-bottom: 16px;
 }
 
+main > #novo-contato p {
+    font-weight: normal;
+    font-size: 14px;
+    margin-bottom: 8px;
+    padding: 8px;
+    border-radius: 10px;
+    color: white;
+}
+
+main > #novo-contato p.hide {
+    display: none;
+}
+
+main > #novo-contato p.alerta {
+    background-color: darkorange;
+}
+
 main > #novo-contato form {
     display: flex;
     justify-content: space-between;
@@ -90,6 +109,7 @@ main > #novo-contato input {
 main > #novo-contato button {
     font-family: var(--font-standard);
     font-size: 16px;
+    font-weight: bold;
     color: white;
     background-color: var(--bg-button);
     padding: 8px;
@@ -97,6 +117,8 @@ main > #novo-contato button {
     width: 100px;
     border-radius: 10px;
     border: none;
+    cursor: pointer;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.359);
 }
 
 main > #novo-contato button:hover {
@@ -105,6 +127,7 @@ main > #novo-contato button:hover {
 
 main > #novo-contato .btn-disabled {
     background-color: darkgray;
+    box-shadow: none;
 }
 
 main > #novo-contato .btn-disabled:hover {

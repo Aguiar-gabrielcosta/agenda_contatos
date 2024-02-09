@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Agenda de Contatos</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="Images/icon-calendar.png" alt="Icone de calendário">
+            <h1>Agenda de Contatos</h1>
+        </header>
+        <main>
+            <section id="novo-contato">
+                <h2>Novo Contato</h2>
+                <form id="form">
+                    <input type="text" name="nome-completo" id="input-nome-completo" placeholder="Nome completo" required>
+                    <input type="tel" name="celular" id="input-celular" placeholder="Celular: (DDD) 00000-0000" pattern="\(\d{2}\)\s*\d{5}-\d{4}"  required>
+                    <button type="submit" id="btn-submit" class="btn-disabled" disabled="true">Cadastrar</button>
+                </form>
+            </section>
+            <section id="secao-contatos">
+                <h2>Lista de Contatos</h2>
+                <table spacing="0">
+                    <thead>
+                        <tr>
+                            <th scope="col">Nome completo</th>
+                            <th scope="col">Celular</th>
+                        </tr>
+                    </thead>
+                    <tbody id="lista-contatos">
+                        <tr>
+                            <td>Jacinto Torres</td>
+                            <td>(11) 91234-5678</td>
+                        </tr>
+                        <tr>
+                            <td>José Silva da Costa</td>
+                            <td>(21) 91244-5438</td>
+                        </tr>
+                        <tr>
+                            <td>Maria Andrade de Carvalho</td>
+                            <td>(85) 93242-5434</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </main>
+    </div>
+</body>
+</html>

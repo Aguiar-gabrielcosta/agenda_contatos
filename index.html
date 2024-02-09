@@ -18,10 +18,11 @@
         <main>
             <section id="novo-contato">
                 <h2>Novo Contato</h2>
+                <p id="msg-to-user" class="hide alerta"></p>
                 <form id="form">
-                    <input type="text" name="nome-completo" id="input-nome-completo" placeholder="Nome completo" required>
-                    <input type="tel" name="celular" id="input-celular" placeholder="Celular: (DDD) 00000-0000" pattern="\(\d{2}\)\s*\d{5}-\d{4}"  required>
-                    <button type="submit" id="btn-submit" class="btn-disabled" disabled="true">Cadastrar</button>
+                    <input type="text" name="nome" id="input-nome" placeholder="Nome do contato" required>
+                    <input type="tel" name="celular" id="input-celular" placeholder="Celular: (DD) 00000-0000" pattern="\(\d{2}\)\s*\d{5}-\d{4}" required maxlength="15">
+                    <button type="submit" id="btn-cadastro" class="btn-disabled" disabled="true">Cadastrar</button>
                 </form>
             </section>
             <section id="secao-contatos">
@@ -29,27 +30,16 @@
                 <table spacing="0">
                     <thead>
                         <tr>
-                            <th scope="col">Nome completo</th>
+                            <th scope="col">Nome do contato</th>
                             <th scope="col">Celular</th>
                         </tr>
                     </thead>
                     <tbody id="lista-contatos">
-                        <tr>
-                            <td>Jacinto Torres</td>
-                            <td>(11) 91234-5678</td>
-                        </tr>
-                        <tr>
-                            <td>José Silva da Costa</td>
-                            <td>(21) 91244-5438</td>
-                        </tr>
-                        <tr>
-                            <td>Maria Andrade de Carvalho</td>
-                            <td>(85) 93242-5434</td>
-                        </tr>
                     </tbody>
                 </table>
             </section>
         </main>
     </div>
+    <script src="./scripts/main.js"></script>
 </body>
 </html>

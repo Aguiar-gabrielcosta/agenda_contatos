@@ -1,0 +1,145 @@
+:root {
+    --bg-gradient-color1: #DDF9FF;
+    --bg-gradient-color2: #a4e2f0;
+    --bg-button: #58ce46;
+    --bg-button-hover: #74e263;
+    --bg-section-color: #dbf6fc91;
+    --font-color: #152a4a;
+    --font-color-2: #152a4a3d;
+    --font-standard: "Roboto", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font-standard);
+    color: var(--font-color);
+}
+
+html, body {
+    height: 100vh;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to bottom, var(--bg-gradient-color1), var(--bg-gradient-color2));
+    background-repeat: no-repeat;
+}
+
+.container {
+    background-color: white;
+    max-width: 800px;
+    width: 100%;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+}
+
+header img {
+    height: 40px;
+    width: 40px;
+}
+
+header h1 {
+    font-size: 36px;
+}
+
+main {
+    margin: 0 60px;
+}
+
+main > #novo-contato {
+    background-color: var(--bg-section-color);
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 32px;
+}
+
+main > #novo-contato h2 {
+    font-weight: normal;
+    font-size: 24px;
+    margin-bottom: 16px;
+}
+
+main > #novo-contato form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+main > #novo-contato input {
+    font-family: var(--font-standard);
+    font-size: 16px;
+    padding: 8px;
+    width: 250px;
+    margin-bottom: 8px;
+    border: none;
+    border-bottom: 2px solid var(--font-color);
+    color: var(--font-color);
+    outline-color: var(--font-color);
+}
+
+main > #novo-contato button {
+    font-family: var(--font-standard);
+    font-size: 16px;
+    color: white;
+    background-color: var(--bg-button);
+    padding: 8px;
+    margin-bottom: 8px;
+    width: 100px;
+    border-radius: 10px;
+    border: none;
+}
+
+main > #novo-contato button:hover {
+    background-color: var(--bg-button-hover);
+}
+
+main > #novo-contato .btn-disabled {
+    background-color: darkgray;
+}
+
+main > #novo-contato .btn-disabled:hover {
+    background-color: darkgray;
+}
+
+main > #secao-contatos {
+    background-color: var(--bg-section-color);
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 32px;
+}
+
+main > #secao-contatos h2 {
+    font-weight: normal;
+    font-size: 24px;
+    margin-bottom: 16px;
+}
+
+main > #secao-contatos table {
+    padding: 20px;
+    width: 100%;
+    border-spacing: 0;
+}
+
+main > #secao-contatos thead th {
+    font-size: 20px;
+    text-align: left;
+    padding: 0 8px 8px 8px;
+    border-bottom: 1px solid var(--font-color);
+}
+
+main > #secao-contatos tbody td {
+    font-size: 18px;
+    text-align: left;
+    padding: 8px;
+    border-bottom: 1px solid var(--font-color-2);
+}
